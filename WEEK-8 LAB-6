@@ -1,0 +1,147 @@
+*******************
+*                 *
+*    TASK NO 01   *
+*                 *
+*******************
+
+package movie;
+
+/**
+ *
+ * @author Riphah
+ */
+ class Movie {	
+    // Private fields
+    private String title;
+    private String director;
+    private int releaseYear;
+    
+    // Constructor (Optional, if you want to initialize with values directly)
+    public Movie() {
+    }
+    
+    // Getter and setter methods for title
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    // Getter and setter methods for director
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    // Getter and setter methods for releaseYear
+    public int getReleaseYear() {
+        return releaseYear;
+    }
+
+    public void setReleaseYear(int releaseYear) {
+        this.releaseYear = releaseYear;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+       
+        Movie myMovie = new Movie();
+       
+        myMovie.setTitle("NIGHT AGENT");
+        myMovie.setDirector(" JOHN NIKOLY");
+        myMovie.setReleaseYear(2023);
+
+        System.out.println("Movie Title: " + myMovie.getTitle());
+        System.out.println("Director: " + myMovie.getDirector());
+        System.out.println("Release Year: " + myMovie.getReleaseYear());
+    }
+}
+
+
+*******************
+*                 *
+*    TASK NO 02   *
+*                 *
+*******************
+
+
+package appliances;
+
+/**
+ *
+ * @author Riphah
+ */
+class Appliance {
+    private String brand;
+    private String model;
+    private int powerConsumption;
+
+    // Constructor to initialize fields
+    public Appliance(String brand, String model, int powerConsumption) {
+        this.brand = brand;
+        this.model = model;
+        this.powerConsumption = powerConsumption;
+    }
+
+    // Getter methods
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getPowerConsumption() {
+        return powerConsumption;
+    }
+}
+
+
+
+// Step 3: Implement and Display Data in the Main Method
+public class Main {
+    public static void main(String[] args) {
+        // Create an object of the Refrigerator class
+        refrigerator fridge = new refrigerator("DAWLANCE", "RY6543HG789", 670, 200);
+
+        // Display the details using getter methods
+        System.out.println("Brand: " + fridge.getBrand());
+        System.out.println("Model: " + fridge.getModel());
+        System.out.println("Power Consumption: " + fridge.getPowerConsumption() + " WATTS");
+        System.out.println("Capacity: " + fridge.getCapacity() + " LITRES");
+    }
+}
+
+
+package appliances;
+
+/**
+ *
+ * @author Riphah
+ */
+class refrigerator extends Appliance {
+    private int capacity;
+
+    // Constructor to initialize fields from Appliance and new capacity field
+    public refrigerator(String brand, String model, int powerConsumption, int capacity) {
+        super(brand, model, powerConsumption);  // Call the constructor of the parent class
+        this.capacity = capacity;
+    }
+
+    // Getter and setter for capacity
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+}
+
+
