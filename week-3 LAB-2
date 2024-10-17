@@ -1,0 +1,100 @@
+****************************
+*                          *
+*        TASK NO 01        *
+*                          *
+****************************
+
+package student;
+class Student {
+    String Name;
+    String City;
+    int Age;
+
+public static void main(String[] args){
+    Student s1 = new Student();
+    s1.Name="Arusa"; s1.City="Karachi";s1.Age=18;
+    System.out.println(s1.Name);
+    System.out.println(s1.City);
+    System.out.println(s1.Age);
+    Student s2 = new Student();
+    s2.Name = "hoorain";s2.City = "lahore"; s2.Age = 19;
+    System.out.println(s2.Name);
+    System.out.println(s2.City);
+    System.out.println(s2.Age);
+  }
+}
+
+****************************                       
+*                          *  
+*         TASK NO 02       *
+*                          *
+**************************** 
+
+
+package area;
+public class Area{
+    int length;
+    int width;
+    
+    public static void main(String[] args) {
+        Area a1 = new Area();
+        a1.length = 20 ; a1.width = 90;
+        System.out.println("B ="+ a1.length*a1.width);
+        
+    }
+}
+
+
+
+****************************
+*                          *
+*       TASK NO 03         *            
+*                          *
+****************************
+
+package computer;
+public class Computer{
+    String name;
+    String config;
+    int cost;
+    String os;
+    public static void main(String[] args){
+        Computer c1= new Computer();
+        c1.name = "Apple";c1.config = "i5";c1.cost =50000;c1.os = "IOS";
+        System.out.println("The company name is"+c1.name);
+        System.out.println("The configuration"+c1.config);
+        System.out.println("The cost of computer is"+c1.cost);
+        System.out.println("The operating system is"+c1.os);
+        
+    }
+}
+
+
+****************************
+*                          *
+*       TASK NO 04         *  
+*                          *
+****************************
+
+package maximum;
+class Maximum
+{
+    public static void main(String[] args)
+    {
+        int a=5;
+        int b=10;
+        int c=15;
+        if(a>b)
+            if(a>c)
+                 System.out.println(a +"is the bigger.");
+        else if(b>c)
+                System.out.println(b +"is the bigger.");
+        else
+            System.out.println(c +"is the bigger.");
+    }
+    
+}
+
+
+
+
