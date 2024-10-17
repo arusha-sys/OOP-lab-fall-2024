@@ -1,0 +1,58 @@
+*******************
+*                 *
+*   TASK NO 01    *
+*                 *
+*******************
+
+public class PrintA {
+    public static void main(String[] args) {
+        int height = 7;  
+        int width = 5;   
+
+        for (int row = 0; row < height; row++) {
+            for (int col = 0; col < width; col++) {
+                if (row == 0 && col != 0 && col != width - 1 
+                    || row == height / 2                     
+                    || col == 0 && row != 0                  
+                    || col == width - 1 && row != 0) {       
+                    System.out.print("*");
+                } 
+                else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();  
+        }
+    }
+}
+
+
+*******************
+*                 *
+*   TASK NO 02    *
+*                 *
+*******************
+
+
+import java.util.Scanner;
+class Laptop {
+private String brand;
+public Laptop(String brand) {
+this.brand = brand;
+}
+public void displayBrand() {
+System.out.println("Laptop Brand: " + brand);
+}
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter laptop's brand: ");
+String brand = scanner.nextLine();
+Laptop laptop = new Laptop(brand);
+laptop.displayBrand();
+}
+}
+
+
+
+
+
