@@ -1,0 +1,94 @@
+***********************
+*                     *
+*     TASK NO 01      *
+*                     *
+***********************
+
+package arrayexample;
+public class ArrayExample {
+    public static void main(String[] args) {
+       
+        String[] colors = {"Red", "Green", "Blue", "Yellow", "Orange"}
+      
+        for (int i = 0; i < colors.length; i++) {
+            System.out.println(colors[i]);
+        }
+    }
+}
+
+
+
+***********************
+*                     *
+*     TASK NO 02      *
+*                     *
+***********************
+
+package oddevenchecker;
+public class OddEvenChecker
+{
+    public static void main(String[] args) {
+        int num = 17;
+
+        if (num % 2 == 0) {
+            System.out.println(num + " is even.");
+        } else {
+            System.out.println(num + " is odd.");
+        }
+    }
+}
+
+
+***********************
+*                     *
+*     TASK NO 03      *
+*                     *
+***********************
+
+
+package evennumbers;
+public class EvenNumbers {
+    public static void main(String[] args) {
+        int i = 1; // Initialize the loop variable
+
+        while (i <= 20) { 
+            if (i % 2 == 0) { 
+                System.out.println(i); 
+            }
+            i++; 
+        }
+    }
+}
+
+
+
+
+***********************
+*                     *
+*     TASK NO 04      *
+*                     *
+***********************
+
+package pattern;
+public class Pattern 
+{
+      public static void main(String[] args) {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 6; j++) { 
+                System.out.print("* ");
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
